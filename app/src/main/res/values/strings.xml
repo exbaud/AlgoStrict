@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AlgoStrict</string>
+    <string name="tab_editor">Éditeur</string>
+    <string name="tab_course">Cours</string>
+    <string name="tab_exercises">Exercices</string>
+    <string name="tab_files">Fichiers</string>
+</resources>

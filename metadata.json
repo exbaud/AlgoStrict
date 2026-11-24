@@ -1,0 +1,6 @@
+{
+  "name": "AlgoStrict",
+  "description": "Éditeur, analyseur strict et interpréteur pas-à-pas de pseudo-code français basé sur le cours d'algorithmique IFRI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

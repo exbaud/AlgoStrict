@@ -28,6 +28,11 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: ${{ steps.gradle-ver.outputs.version }}
+      - name: Creer debug.keystore
+        run: |
+          if [ ! -f debug.keystore ]; then
+            keytool -genkeypair -keystore debug.keystore -alias androiddebugkey -storepass android -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
+          fi
       - name: Compiler l'APK
         run: gradle assembleDebug
       - name: Sauvegarder l'APK
